@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">智能记账</string>
+    <string name="service_label">支付通知监听服务</string>
+
+    <!-- 导航 -->
+    <string name="nav_bills">账单</string>
+    <string name="nav_statistics">统计</string>
+
+    <!-- 账单相关 -->
+    <string name="total_expense_format">总支出: ¥%.2f</string>
+    <string name="total_income_format">总收入: ¥%.2f</string>
+    <string name="add_bill">添加账单</string>
+    <string name="amount">金额</string>
+    <string name="category">分类</string>
+    <string name="payment_method">支付方式</string>
+    <string name="date">日期</string>
+    <string name="description">备注描述</string>
+    <string name="expense">支出</string>
+    <string name="income">收入</string>
+    <string name="save">保存</string>
+
+    <!-- 统计 -->
+    <string name="statistics_title">数据洞察</string>
+    <string name="category_distribution">支出分类</string>
+    <string name="payment_distribution">支付方式</string>
+
+    <!-- Tab -->
+    <string name="tab_all">全部</string>
+    <string name="tab_expense">支出</string>
+    <string name="tab_income">收入</string>
+    <string name="tab_auto">自动</string>
+    <string name="tab_manual">手动</string>
+
+    <!-- Chip -->
+    <string name="chip_this_month">本月</string>
+    <string name="chip_this_week">本周</string>
+    <string name="chip_custom_time">自定义</string>
+
+    <!-- 分类 -->
+    <string name="cat_food">餐饮美食</string>
+    <string name="cat_shopping">购物消费</string>
+    <string name="cat_transport">交通出行</string>
+    <string name="cat_bills">生活缴费</string>
+    <string name="cat_medical">医疗健康</string>
+    <string name="cat_entertainment">娱乐休闲</string>
+    <string name="cat_transfer">转账红包</string>
+    <string name="cat_salary">工资收入</string>
+    <string name="cat_other">其他</string>
+
+    <!-- 支付方式 -->
+    <string name="pay_wechat">微信支付</string>
+    <string name="pay_alipay">支付宝</string>
+    <string name="pay_bank">银行卡</string>
+    <string name="pay_credit">信用卡</string>
+    <string name="pay_cash">现金</string>
+    <string name="pay_yuebao">余额宝</string>
+    <string name="pay_wechat_balance">微信零钱</string>
+    <string name="pay_other">其他</string>
+</resources>
