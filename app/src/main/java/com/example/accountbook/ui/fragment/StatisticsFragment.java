@@ -135,10 +135,10 @@ public class StatisticsFragment extends Fragment {
                 tvChipPeriod.setText("自定义区间");
                 updateData();
             });
-            endPicker.show(getSupportFragmentManager(), "end_date_picker");
+            endPicker.show(getParentFragmentManager(), "end_date_picker");
         });
 
-        startPicker.show(getSupportFragmentManager(), "start_date_picker");
+        startPicker.show(getParentFragmentManager(), "start_date_picker");
     }
 
     private void updateData() {
