@@ -30,9 +30,14 @@ jobs:
         yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses
         printf 'sdk.dir=%s\n' "$ANDROID_HOME" > local.properties
 
-    - name: Install Gradle 8.4
+    - name: Install Gradle with retry
       run: |
-        curl -s "https://services.gradle.org/distributions/gradle-8.4-bin.zip" -o /tmp/gradle.zip
+        for i in 1 2 3; do
+          echo "Attempt $i/3: Downloading Gradle..."
+          curl -L --retry 3 --retry-delay 5 -o /tmp/gradle.zip "https://services.gradle.org/distributions/gradle-8.4-bin.zip" && break
+          sleep 10
+        done
+        file /tmp/gradle.zip
         sudo unzip -q /tmp/gradle.zip -d /opt
         sudo ln -sf /opt/gradle-8.4/bin/gradle /usr/local/bin/gradle
         gradle --version
